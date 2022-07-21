@@ -17,3 +17,4 @@ options.termguicolors = true
 options.scrolloff = 8
 options.sidescrolloff = 8
 options.signcolumn = "yes"
+options.wrap = false 
