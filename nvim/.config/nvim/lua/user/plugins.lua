@@ -43,21 +43,54 @@ packer.init {
 return packer.startup(function(use)
     -- My plugins here
     use { "nvim-lua/plenary.nvim" } -- Useful lua function used by a lot of plugins 
-
+    use {
+        "windwp/nvim-autopairs", 
+        config = function()
+            require("nvim-autopairs").setup {}
+        end
+    } -- Autopairs, integrates with both cmp and treesitter
+    use {
+       'numToStr/Comment.nvim',
+        config = function()
+            require('Comment').setup()
+        end
+    }
+    use({ "kyazdani42/nvim-web-devicons" })
+	use({
+            "kyazdani42/nvim-tree.lua",
+            requires = {
+               'kyazdani42/nvim-web-devicons', -- optional, for file icons
+            },
+            config = function()
+                require("nvim-tree").setup()
+            end
+    })
     -- Colorshemes
     use { "gruvbox-community/gruvbox" }
 
     -- Completion plugins
-    use { "neoclide/coc.nvim", branch = "release" }
-
-    -- Snippets
 
     -- LSP
+    use 'neovim/nvim-lspconfig' -- Configurations for Nvim LSP
 
     -- Telescope
     use { "nvim-telescope/telescope.nvim" }
 
+    -- Treesitter
+    use {
+        "nvim-treesitter/nvim-treesitter",
+        config = function()
+            require("nvim-treesitter").setup()
+        end
+
+    }
     -- Git
+    use {
+        "lewis6991/gitsigns.nvim",
+        config = function()
+            require('gitsigns').setup()
+        end
+    }
 
     -- DAP
 
