@@ -6,3 +6,4 @@ if not status_ok then
 end
 
 pcall(vim.cmd, "highlight Normal guibg=none")
+
