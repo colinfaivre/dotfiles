@@ -82,13 +82,8 @@ return packer.startup(function(use)
 
     }
     -- Git
-    use {
-        "lewis6991/gitsigns.nvim",
-        config = function()
-            require('gitsigns').setup()
-        end
-    }
-
+    use("TimUntersberger/neogit")
+    
     -- DAP
 
     -- Automatically set up your configuration after cloning packer.nvim

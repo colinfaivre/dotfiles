@@ -14,7 +14,7 @@ vim.g.mapleader = " "
 -- command_mode = "c"
 
 -- Telescope
-keymap("n", "<c-p>", ":Telescope find_files hidden=true<CR>", options)
+keymap("n", "<c-p>", ":Telescope git_files<CR>", options)
 
 -- LSP
 -- Use an on_attach function to only map the following keys
