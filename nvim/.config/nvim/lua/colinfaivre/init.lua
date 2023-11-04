@@ -1,6 +1,0 @@
-require("colinfaivre.options")
-require("colinfaivre.plugins")
-require("colinfaivre.keymaps")
-require("colinfaivre.colorscheme")
-require("colinfaivre.nvim-tree")
-require("colinfaivre.neogit")
