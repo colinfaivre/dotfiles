@@ -42,10 +42,8 @@
 - add keybindings to replace ctl+w on split window default keybindings for no conflicts with tmux close window
 - search in file better with "/" or telescope ? 
 - add something to get matching pair character when typing the first ?
-- add limits for the cursor not to be completely on top or bottom of the file
 - remap caps lock to escape ?
 - open a file on split window ?
-- write bash scripts to replace "init my dev machine" repo
 
 ## Netrw
 [netrw doc](https://neovim.io/doc/user/pi_netrw.html)
@@ -81,3 +79,9 @@ https://github.com/nvim-telescope/telescope.nvim
 - [S]earch by [G]rep: <leader>sg
 - [S]earch [D]iagnostics: <leader>sd
 
+**@TODO**
+- use telescope instead of git fugitive ?
+
+## Git - Fugitive
+**@SHORTCUTS**
+**@TODO**

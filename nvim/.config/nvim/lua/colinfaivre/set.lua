@@ -33,3 +33,5 @@ vim.o.completeopt = 'menuone,noselect'
 
 vim.opt.swapfile = false
 vim.opt.backup = false
+
+vim.o.scrolloff = 120
